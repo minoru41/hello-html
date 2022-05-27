@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
-	    <style type="text/css">
-      h1 { color: #f4005f; }
-      p { font-weight: bold; }
-    </style>
-    <title>HTML</title>
+	<title>HTML</title>  
+    <script>
+      function clickHandler() {
+	      const box = document.getElementById("box");
+	      const p = document.createElement("p");
+	      p.innerText = "Added by JS";
+	      box.appendChild(p);
+      }
+    </script>
+   <style type="text/css">
+     h1 { color: #f4005f; }
+     p { font-weight: bold; }
+   </style>
   </head>
   <body>
     <h1>Hello HTML</h1>
@@ -15,6 +23,8 @@
 HTML
 </a>.
     </p>
+  <button onclick="clickHandler()">sekai</button>
+  <div id="box"></div>
   </body>
 </html>
 
